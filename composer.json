@@ -1,0 +1,21 @@
+{
+  "name": "vendor_name/genomed-backend-api",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "diana",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+    "ramsey/uuid": "^4.2",
+    "ext-pdo": "*",
+    "vlucas/phpdotenv": "^5.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  }
+}
