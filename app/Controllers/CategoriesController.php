@@ -55,4 +55,9 @@ class CategoriesController
             echo json_encode(array("message" => "Записи не существует."), JSON_UNESCAPED_UNICODE);
         }
     }
+
+    public function errorController()
+    {
+        var_dump($_SERVER['HTTP_HOST']);
+    }
 }
