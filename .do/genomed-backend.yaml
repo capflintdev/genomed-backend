@@ -1,0 +1,8 @@
+name: genomed-backend
+services:
+- environment_slug: php
+  github:
+    branch: main
+    deploy_on_push: true
+    repo: capflintdev/genomed-backend
+  name: genomed-backend
