@@ -3,7 +3,7 @@
 class Database {
 
     // укажите свои учетные данные базы данных
-    private $host = "db-chromolab-do-user-10360923-0.b.db.ondigitalocean.com";
+    private $host = "db-chromolab-do-user-10360923-0.b.db.ondigitalocean.com:25060";
     private $db_name = "genomed";
     private $username = "doadmin";
     private $password = "swWCNwdNmCxd8BNy";
