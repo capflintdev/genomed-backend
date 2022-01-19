@@ -1,0 +1,10 @@
+{
+  "name": "capflintdev/genomed-backend",
+  "description": "PHP api",
+  "type": "project",
+  "authors": [
+    {
+      "name": "diana"
+    }
+  ]
+}

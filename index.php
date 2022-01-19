@@ -10,7 +10,7 @@ use App\Controllers\CategoriesController;
 
 $router = new \App\Router();
 $router
-    ->register('/api/categories', [CategoriesController::class, 'read'], 'get')
+    ->register('/api/categories', [CategoriesController::class, 'index'], 'get')
     ->register('/api', [CategoriesController::class, 'errorController'], 'get')
     ->register('/api/all', [\App\Controllers\TestsController::class, 'index'], 'get');
 try {
