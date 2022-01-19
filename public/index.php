@@ -24,3 +24,4 @@ try {
 } catch (\App\Exceptions\RouteNotFoundException $e) {
     echo $e->getMessage();
 }
+var_dump($_SERVER);
