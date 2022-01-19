@@ -1,8 +1,33 @@
+alerts:
+  - rule: DEPLOYMENT_FAILED
+  - rule: DOMAIN_FAILED
 name: genomed-backend
+region: fra
 services:
-- environment_slug: php
-  github:
-    branch: main
-    deploy_on_push: true
-    repo: capflintdev/genomed-backend
-  name: genomed-backend
+  - build_command: composer install
+    environment_slug: php
+    envs:
+      - key: DB_HOST
+        scope: RUN_AND_BUILD_TIME
+        value: ${db.HOSTNAME}
+      - key: DB_USER
+        scope: RUN_AND_BUILD_TIME
+        value: ${db.USERNAME}
+      - key: DB_PASS
+        scope: RUN_AND_BUILD_TIME
+        value: ${db.PASSWORD}
+      - key: DB_DATABASE
+        scope: RUN_AND_BUILD_TIME
+        value: ${db.DATABASE}
+    github:
+      branch: master
+      deploy_on_push: true
+      repo: capflintdev/genomed-backend
+    http_port: 8080
+    instance_count: 1
+    instance_size_slug: basic-xxs
+    name: genomed-backend
+    routes:
+      - path: /
+    run_command: heroku-php-apache2
+    source_dir: /
