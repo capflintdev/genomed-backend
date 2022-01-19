@@ -3,10 +3,10 @@
 class Database {
 
     // укажите свои учетные данные базы данных
-    private $host = "${db.HOSTNAME}";
+    private $host = "db-chromolab-do-user-10360923-0.b.db.ondigitalocean.com";
     private $db_name = "genomed";
-    private $username = "${db.USERNAME}";
-    private $password = "${db.PASSWORD}";
+    private $username = "doadmin";
+    private $password = "swWCNwdNmCxd8BNy";
     public $conn;
 
     // получаем соединение с БД
