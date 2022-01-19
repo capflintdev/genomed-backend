@@ -19,6 +19,10 @@ try {
     echo $e->getMessage();
 }
 
+echo '<pre>';
+print_r($router->getRoutes());
+echo '</pre>';
+
 echo '<br>';
 echo 'http host ' . $_SERVER['HTTP_HOST'];
 echo '<br>';
