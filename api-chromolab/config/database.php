@@ -9,6 +9,7 @@ class Database {
     private $password = "swWCNwdNmCxd8BNy";
     public $conn;
 
+
     // получаем соединение с БД
     public function getConnection(){
 
